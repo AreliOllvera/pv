@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+<title>Mujer Emprendedora </title>
+    
+<link rel="icon" type="image/png" href="http://linxys.com.mx/arelia/areli.png" whidth="10" heigth="20">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+ </head>
+    
+<body>
+    
+<header >
+<img class="logo"
+     src="http://linxys.com.mx/arelia/areli.png">
+    
+ <nav class="menu">
+<ul>   
+   <li><a href="#" >Cobrar</a></li> 
+   <li><a href="almacenar.html">Registrar Producto</a></li> 
+ </ul>
+ </nav>
+</header>
+   
+    
+<script>
+    function cobrar(){
+a1=document.getElementById("cantidad").value;    
+a2=document.getElementById("precio").value;     
+    
+        let d = new Date();
+        
+        
+    total = parseInt(a1)*parseInt(a2);
+    
+    t_total= document.getElementById("total");
+    t_total.innerHTML="Total: $"+total+"      "+"Hora de cobro:"+ d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+        ;
+    }
+    
+</script>
+    
+    <br>
+    <br>
+<center>
+ <form name="calculo">
+      <table border="3">
+       <tr>
+<label>Cantidad:</label>
+<input id="cantidad" type="text" size="10"/>
+<label>Precio:</label>
+<input id="precio" type=" text" size="10"/>  
+<input type="submit" value="cobrar" onclick="cobrar()">
+    </tr>
+          <br>
+   <div id="total"></div> 
+
+
+</table>
+</form>
+</center>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
+     <script type="text/javascript">
++
+        window.onload= function saludo(){
+        alert('Hola mujer emprendedora');
+    }
+    
+    
+    </script>

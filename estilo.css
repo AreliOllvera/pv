@@ -1,0 +1,40 @@
+
+*{
+    width: auto;
+    height: auto;
+}
+header{
+background-color:lightsteelblue;
+  height: auto;
+     
+}
+.logo{
+    margin-top: -10px;
+    margin-left: 90px;
+   
+   
+}
+header nav {
+    
+float: right;
+ margin-top: 30px;
+    
+}
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+ 
+header nav ul li {
+	float: left;
+    padding: 10px;
+}
+ 
+header nav ul li a {
+    margin-top: 40px;
+	display: block;
+	color:darkslateblue;
+	text-decoration: none;
+    font-size: 25;
+font-family:fantasy;
+}
